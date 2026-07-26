@@ -1,0 +1,217 @@
+body {
+    font-size: 15pt;
+    background-color: #fff;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --TEXT_COLOR:#FFF;
+    --BG-PRIMARY: BLACK;
+    --BG-SECONDARY: #032D3D;
+    --BTN-PRIMARY-BG:#42445A;
+    --BTN-SECONDARY-BG:PINK;
+    --BTN-BORDER: WHITE;
+    
+    --BTN-COLOR-TEXT:YELLOW;
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    background-color: var(--BG-SECONDARY);
+    width: 100vw;
+}
+.css-header_icon-csection{
+    padding: 10px;
+}
+.css-hamburger-icon-container{
+
+}
+.css-hamburger-icon-container::after {
+    content: "";
+    display: block;
+    transform: translateY(4px);
+    
+}
+.css-hamburger-icon-container::before{
+    content: "";
+  
+    display: block;
+    transform: translateY(-5px);
+    
+}
+.css-hamburger-icon-container,
+.css-hamburger-icon-container::before,
+.css-hamburger-icon-container::after{
+    background-color: white;
+    height: 1px;
+    width: 20px;
+    border-radius: 20px;
+    
+}
+.css-hamburger-icon-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+    padding: 30px;
+    
+}
+.css-hamburger-icon-section:active  {
+    
+}
+.css-web-logo{
+    outline: 1px solid white;
+    outline-offset: 2px;
+}
+nav{
+    position: fixed;
+    bottom: 0;
+    left: -20vh;
+    height: 200vh;
+    width: 200vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+    pointer-events: none;
+    
+}
+
+.css-nav-inner-section{
+    height: 0px;
+    width:0px;
+    opacity: 0;
+    background-color: var(--BG-SECONDARY);
+    border-radius: 50%;
+    cursor:all;
+    transition: all .5s;
+    
+}
+.css-nav-content-section{
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    
+}
+.css-nav-top-section{
+    height: 10vh;
+    text-align: right;
+}
+main{
+    height: 200vh;
+}
+.css-web-intro-section{
+    margin-top: 10vh;
+    height: 90vh;
+    background-image: url("/assets/images/istockphoto-1359467170-1024x1024.jpg");
+    background-position: left;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.css-upper-intro{
+    color: var(--TEXT_COLOR);
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+}
+.css-web-intro-inner-section{
+    height: 100%;
+    background-color: #00000087;
+}
+.css-intro-button{
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    border: 1px solid var(
+        --BTN-BORDER
+    );
+    background-color: transparent;
+    
+    color: var(--BTN-COLOR-TEXT);
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+.css-intro-button:active{
+    background-color: gold;
+}
+.css-about-us-section{
+    padding: 20px;
+}
+.css-color-red{
+    color: red;
+}
+.nav-inner-active{
+    height: 200vh;
+    width: 200vh;
+    opacity:1;
+    cursor: none;
+}
+.nav-active{
+    pointer-events: all;
+    background-color: #000000BA;
+}
+.css-close-nav-btn{
+    height: 70px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    
+}
+.css-nav-item-card{
+    height: 70px;
+    
+    text-align: right;
+    color: white;
+    padding: 10px;
+}
+
+.css-nav-top-section,
+.css-nav-lower-section{
+    padding: 10px;
+}
+.css-nav-lower-section{
+    background-color: #161937;
+    margin: 20px;
+    height: 70%;
+    border-radius: 0 0 0 600px;
+    font-size: 0.9rem;
+}
+.css-about-us-body{
+    color:#0000008C;
+    padding: 10px;
+    text-align: center;
+}
+.css-morehaboit-us-btn{
+    color:red;
+    width: 200px;
+    height: 40px;
+    border: 1px solid var(--BG-SECONDARY);
+    background-color: transparent;
+    border-radius: 5px;
+    
+}
+@keyframes close-navbar{
+
+
+}
+@keyframes open-navbar{
+    
+}
