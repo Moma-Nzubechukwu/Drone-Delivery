@@ -5,4 +5,4 @@ app.use(express.static(path.join(__dirname, "frontend")))
 app.get("/favicon", (req, res) => {
     res.sendFile(path.join(__dirname, "frontend", "assets", "images", "Screenshot_20260716-130531_1.jpg"))
 })
-app.listen(3000)
+module.exports = app; // or export default app;
