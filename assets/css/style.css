@@ -1,75 +1,90 @@
 /* SETUP */
+
 body {
     font-size: 15pt;
     background-color: #fff;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* SETUP ENDS */
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --TEXT_COLOR:#FFF;
+
+:root {
+    --TEXT_COLOR: #FFF;
+    --TEXT-COLOR-SECONDARY: black;
     --BG-PRIMARY: #fff;
     --BG-SECONDARY: #032D3D;
-    --BTN-PRIMARY-BG:#42445A;
-    --BTN-SECONDARY-BG:PINK;
+    --BTN-PRIMARY-BG: #42445A;
+    --BTN-SECONDARY-BG: PINK;
     --BTN-BORDER: WHITE;
     --BACK-GROUND-BLUR: #00000087;
-    
-    --BTN-COLOR-TEXT:YELLOW;
+    --BORDER-LIGHT: rgba(128, 128, 128, 0.346);
+    --BTN-COLOR-TEXT: YELLOW;
+    --BG-3: #161937;
 }
+
+
 /* HEADER  */
 
-
-header{
+header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     z-index: 2000;
-     position: fixed;
+    position: fixed;
     top: 0;
     height: 70px;
     background-color: var(--BG-SECONDARY);
     width: 100vw;
 }
-.css-header_icon-csection{
-    padding: 10px;
-}
-.css-header_icon-csection{
-    padding: 10px;
-}
-.css-hamburger-icon-container{
-    position: relative;
 
+.css-header_icon-csection {
+    padding: 10px;
 }
+
+.css-header_icon-csection {
+    padding: 10px;
+}
+
+.css-hamburger-icon-container {
+    position: relative;
+}
+
 .css-hamburger-icon-container::after {
     content: "";
     top: 7px;
     position: absolute;
     display: block;
-    
-    
 }
+
+
 /* HAMBURGER ICON */
-.css-hamburger-icon-container::before{
+
+.css-hamburger-icon-container::before {
     position: absolute;
     content: "";
-  
     display: block;
     top: -7px;
-    
 }
+
 .css-hamburger-icon-container,
 .css-hamburger-icon-container::before,
-.css-hamburger-icon-container::after{
+.css-hamburger-icon-container::after {
     background-color: var(--BG-PRIMARY);
     height: 1px;
     width: 20px;
     border-radius: 20px;
-    
 }
-.css-hamburger-icon-section{
+
+.css-hamburger-icon-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,30 +97,35 @@ header{
     right: 0;
     /* background-color: red; */
     z-index: 2000;
-    
 }
+
+
 /* HAMBURGER ICON ENDS */
-.css-web-logo{
+
+.css-web-logo {
     outline: 1px solid white;
     outline-offset: 2px;
 }
+
+
 /* HEADER ENDS */
 
+
 /* MAIN */
-main{
-    height: 200vh;
-}
+
+
 /* WEB LANDING PAGE */
-.css-web-intro-section{
-    margin-top: 70px;
-    height: 90vh;
+
+.css-web-intro-section {
+    margin-top: 8vh;
+    height: 92vh;
     background-image: url("/assets/images/istockphoto-1359467170-1024x1024.jpg");
     background-position: left;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.css-upper-intro{
+.css-upper-intro {
     color: var(--TEXT_COLOR);
     height: 50%;
     display: flex;
@@ -114,57 +134,66 @@ main{
     flex-direction: column;
     gap: 20px;
 }
-.css-web-intro-inner-section{
+
+.css-web-intro-inner-section {
     height: 100%;
-    background-color:var(--BACK-GROUND-BLUR);
+    background-color: var(--BACK-GROUND-BLUR);
 }
-.css-intro-button{
+
+.css-intro-button {
     height: 50px;
     width: 100px;
     margin: 10px;
-    border: 1px solid var(
-        --BTN-BORDER
-    );
+    border: 1px solid var( --BTN-BORDER);
     background-color: transparent;
-    
     color: var(--BTN-COLOR-TEXT);
     border-radius: 5px;
     font-weight: bold;
-    
 }
-.css-intro-button:active{
-    background-color: gold;
+
+.css-intro-button:active {
+    background-color: var(--BG-SECONDARY);
+    color: var(--TEXT_COLOR);
+    border: none;
 }
+
+
 /* WEB LANDING PAGE ENDS */
+
+
 /* ABOUT US */
-.css-about-us-section{
+
+.css-about-us-section {
     padding: 20px;
+    margin: 100px 0;
 }
-.css-color-red{
+
+.css-color-red {
     color: red;
 }
 
-.css-about-us-body{
-    color:#0000008C;
+.css-about-us-body {
+    color: #0000008C;
     padding: 10px;
     text-align: center;
 }
-.css-morehaboit-us-btn{
-    color:red;
+
+.css-morehaboit-us-btn {
+    color: red;
     width: 200px;
     height: 40px;
     border: 1px solid var(--BG-SECONDARY);
     background-color: transparent;
     border-radius: 5px;
-    
 }
-.css-more-about-us-img-figure{
+
+.css-more-about-us-img-figure {
     position: relative;
-    width: 350px;
     margin: 10px 0;
     height: fit-content;
 }
-.css-img-blur-container{
+
+.css-img-blur-container {
     background-color: var(--BACK-GROUND-BLUR);
     position: absolute;
     top: 0;
@@ -172,126 +201,235 @@ main{
     right: 0;
     bottom: 0;
 }
-.css-24-hr-svg{
+
+
+/* ABOUT US ENDS */
+
+
+/* WHAT WE OFFER SECTION */
+
+.css-what-we-offer-card {
+    border-radius: 5px;
+    margin: 60px auto;
+    padding: 10px;
+    width: 350px;
+}
+
+.css-what-we-offer-section {
+    padding: 10px 30px;
+}
+
+.css-autonumus-svg,
+.css-time-svg,
+.css-24-hr-svg {
     fill: var(--BG-SECONDARY);
-    width: 100px;
-    /* background-color: rgba(128, 128, 128, 0.185); */
+    width: 70px;
     stroke-linecap: round;
     border-radius: 50%;
 }
-.css-24-hr-svg-container{
+
+.css-card-svg-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
-/* ABOUT US ENDS */
-/* MAIN ENDS */
-@media (min-width:640px) {
-    .css-web-intro-section{
-   
-        background-position: top;
 
+.css-what-we-do-card-description-section {
+    padding: 30px 5px;
+    color: var(--TEXT-COLOR-SECONDARY);
+}
+
+
+/* WHAT WE OFFER SECTION ENDS */
+
+
+/* MAIN ENDS */
+
+.css-team-member-img {
+    height: 400px;
+    object-fit: cover;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.css-our-team-member-img-section {
+    position: relative;
+}
+
+.css-our-team-member-card {
+    margin: 30px 10px;
+    width: 350px;
+    height: 400px;
+}
+
+.css-our-team-description-call-to-action-section {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: rgba(128, 123, 123, 0.255);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+    backdrop-filter: blur(10px) saturate(160%);
+}
+
+.css-member-name-section {
+    padding: 20px;
+    color: #fff;
+}
+
+.css-call-to-acion-section {
+    padding: 20px 0;
+}
+
+.css-contact-btn,
+.css-see-profile-btn {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--BG-3);
+    color: var(--TEXT_COLOR);
+}
+
+.css-meet-our-tean-section {
+    padding: 10px 30px;
+}
+
+
+/* FOOTER */
+
+.css-nav-item-card>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    height: 50vh;
+    background-color: var(--BG-SECONDARY);
+}
+
+
+/* FOOTER ENDS */
+
+@media (min-width:640px) {
+    .css-web-intro-section {
+        background-position: top;
     }
-    .css-nav-lower-section{
+    .css-nav-lower-section {
         display: flex;
         gap: 20px;
         align-items: center;
         justify-content: center;
-
     }
-    nav{
-        /* background-color: red; */
+    nav {
         color: white;
-        display: flex;align-items: center;
+        display: flex;
+        align-items: center;
         justify-content: center;
-
     }
-    .css-hamburger-icon-container{
+    .css-hamburger-icon-container {
         display: none;
     }
-    
+    .css-what-we-offer-cards-sections {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .css-more-about-us-body-descriptions-and-img-section {
+        display: flex;
+        gap: 100px;
+        /* margin: 50px; */
+    }
+    .css-about-us-img {
+        width: 500px;
+    }
+    .css-about-me-write-up {
+        max-width: 50vw;
+    }
+    .css-what-we-offer-header {
+        text-align: center;
+    }
 }
-@media (max-width:640px) {
 
-    nav{
+@media (max-width:640px) {
+    nav {
         position: fixed;
         bottom: 0;
         left: -20vh;
         height: 200vh;
         width: 200vh;
-        
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: none;
         pointer-events: none;
-        
     }
-
-    .css-nav-inner-section{
+    .css-nav-inner-section {
         height: 0px;
-        width:0px;
+        width: 0px;
         opacity: 0;
         background-color: var(--BG-SECONDARY);
         border-radius: 50%;
-        cursor:all;
+        cursor: all;
         transition: all .5s;
-        
     }
-    .css-nav-content-section{
+    .css-nav-content-section {
         position: sticky;
         height: 100vh;
         top: 0;
         left: 0;
         width: 100vw;
-        
     }
-    .css-nav-top-section{
+    .css-nav-top-section {
         height: 10vh;
         text-align: right;
     }
-    .nav-inner-active{
+    .nav-inner-active {
         height: 200vh;
         width: 200vh;
-        opacity:1;
+        opacity: 1;
         cursor: none;
     }
-    .nav-active{
+    .nav-active {
         pointer-events: all;
-        background-color: #000000BA;
+        background-color: var(--BACK-GROUND-BLUR);
     }
-    .css-close-nav-btn{
+    .css-close-nav-btn {
         height: 70px;
         background-color: transparent;
-        color: #fff;
+        color: var(--TEXT_COLOR);
         border: none;
-        
     }
-    .css-nav-item-card{
+    .css-nav-item-card {
         height: 70px;
-        
         text-align: right;
         color: white;
         padding: 10px;
     }
-
     .css-nav-top-section,
-    .css-nav-lower-section{
+    .css-nav-lower-section {
         padding: 10px;
     }
-    .css-nav-lower-section{
-        background-color: #161937;
+    .css-nav-lower-section {
+        background-color: var(--BG-3);
         margin: 20px;
         height: 70%;
         border-radius: 0 0 0 600px;
         font-size: 0.9rem;
     }
-    
+    .css-about-us-img {
+        width: 350px;
+    }
 }
-@keyframes close-navbar{
 
+.css-more-abut-us-section {
+    /* background-color: red; */
+}
 
-}
-@keyframes open-navbar{
-    
-}
+@keyframes close-navbar {}
+
+@keyframes open-navbar {}

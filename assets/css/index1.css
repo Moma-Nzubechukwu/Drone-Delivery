@@ -1,0 +1,38 @@
+:root {
+    --PRIMARY-BG-COLOR: rgb(3, 34, 39);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.css-main-top-description-container {
+    height: 80vh;
+    background-color: var(--PRIMARY-BG-COLOR);
+    position: relative;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.css-inner-top-header-section-section {
+    position: absolute;
+    height: 60px;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    width: 60%;
+    transform: skewX(-10deg);
+    top: 0;
+    left: -10px;
+}
+
+.css-main-top-right-section {
+    position: absolute;
+    right: 10px;
+    background-color: var(--PRIMARY-BG-COLOR);
+    top: 0px;
+    height: 60px;
+    transform: skew(-10deg);
+    width: 30%;
+}
