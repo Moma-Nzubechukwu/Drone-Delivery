@@ -7,10 +7,5 @@
     "routes": [{
         "src": "/(.*)",
         "dest": "backend/index.js"
-    }],
-    "functions": {
-        "backend/index.js": {
-            "runtime": "@vercel/node"
-        }
-    }
+    }]
 }
