@@ -1,0 +1,232 @@
+:root {
+    --TEXT_COLOR: #FFF;
+    --TEXT-COLOR-SECONDARY: #0000008C;
+    --BG-PRIMARY: #fff;
+    --BG-SECONDARY: rgb(3, 45, 61);
+    --BTN-PRIMARY-BG: #42445A;
+    --BTN-SECONDARY-BG: PINK;
+    --BTN-BORDER: WHITE;
+    --BACK-GROUND-BLUR: #00000087;
+    --BORDER-LIGHT: rgba(128, 128, 128, 0.346);
+    --BTN-COLOR-TEXT: YELLOW;
+    --BG-3: #161937;
+}
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.css-cart-container {
+    width: 70px;
+    height: 30px;
+    background-color: var(--BG-SECONDARY);
+    border-radius: 20px;
+}
+
+.css-cart-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.css-cart-number-section {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    color: var(--TEXT_COLOR);
+    justify-content: center;
+}
+
+.css-cart-button {
+    background-color: var(--BG-SECONDARY);
+    border: none;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.css-order-header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.css-profile-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: var(--BG-SECONDARY);
+    border-radius: 50%;
+}
+
+.css-header-search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.css-page-search-input {
+    height: 30px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.304);
+    padding: 10px;
+}
+
+.css-page-search-input:focus {
+    background-color: rgba(128, 128, 128, 0.304);
+    outline: none;
+}
+
+.css-header-more-action-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.css-header-more-option {
+    flex-grow: 1;
+}
+
+.css-profile-svg {
+    fill: rgba(255, 255, 255, 0.691);
+    height: 24px;
+}
+
+.css-page-title-section {
+    height: 300px;
+    background-image: url("../images/orders_img/Fried\ Plantains\ Recipe\ with\ Hot\ Pepper\ Sauce.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.css-what-are-in-store-header {
+    text-align: center;
+}
+
+.css-off-color {
+    color: red;
+}
+
+.css-what-are-instore-section {
+    margin: 10px;
+}
+
+.css-what-are-in-store-category-section {
+    margin: 50px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.css-food-category {
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.154);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    fill: var(--TEXT-COLOR-SECONDARY);
+}
+
+.css-food-selected-category {
+    background-color: var(--BG-SECONDARY);
+    color: var(--TEXT_COLOR);
+    fill: rgba(255, 255, 255, 0.691);
+}
+
+.css-food-categoy-svg {
+    fill: inherit;
+    height: 18px;
+}
+
+.css-food-card-section {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.css-food-card-img {
+    width: 350px;
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.css-food-card-img-section {
+    /* background-color: red; */
+    position: relative;
+    background-color: transparent;
+}
+
+.css-card-description-top-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, white, white, transparent);
+    /* color: white; */
+    padding: 20px;
+    /* mix-blend-mode: difference; */
+}
+
+.css-card-price-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--BG-PRIMARY);
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+
+.css-food-card-action-section {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.css-add-to-card-container {
+    flex-grow: 1;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--BG-SECONDARY);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.css-add-to-card-right-cont {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: var(--BG-PRIMARY);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-add-to-card-left-cont {
+    flex-grow: 1;
+}
+
+.css-card-svg {
+    fill: rgba(0, 0, 0, 0.691);
+    height: 18px;
+}
+
+@media (max-width:640px) {
+    .css-header-more-action-section {
+        position: fixed;
+    }
+}

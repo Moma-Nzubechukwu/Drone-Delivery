@@ -8,22 +8,13 @@ const MoreAboutUsBtn = document.getElementById("more-abt-us-btn");
 const closePupupBtn = document.getElementById("close-pup-up-btn");
 const popUpSection = document.getElementById("popup-section");
 localStorage.setItem("isFirstTime", JSON.stringify(true))
+const orderBtn = document.getElementById("order-btn");
 
-// let isFirstTime = JSON.parse(localStorage.getItem("isFirstTime"))
-// document.addEventListener("DOMContentLoaded", () => {
-//     console.log(localStorage)
-//     if (isFirstTime) {
-//         popUpSection.style.opacity = 1
-//         popUpSection.style.pointerEvents = "all"
-//         localStorage.setItem("isFirstTime", JSON.stringify(false))
-//         console.log(localStorage)
 
-//         alert(isFirstTime)
-//     } else {
-//         popUpSection.style.opacity = 0
-//         popUpSection.style.pointerEvents = "none"
-//     }
-// })
+orderBtn.addEventListener("click", () => {
+    window.location.href = "pages/order.html"
+
+})
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Select your element explicitly
     // Update selector if needed

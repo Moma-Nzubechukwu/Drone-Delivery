@@ -13,7 +13,7 @@ html {
 /* SETUP ENDS */
 
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -120,7 +120,7 @@ header {
 .css-web-intro-section {
     margin-top: 8vh;
     height: 92vh;
-    background-image: url("/assets/images/istockphoto-1359467170-1024x1024.jpg");
+    background-image: url("../images/istockphoto-1359467170-1024x1024.jpg");
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
