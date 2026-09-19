@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. If it doesn't exist yet (null), treat them as a first-time user
     const isFirstTime = storedValue === null ? true : JSON.parse(storedValue);
 
-    console.log("Initial state:", localStorage);
+
+
 
     if (isFirstTime) {
         popUpSection.style.opacity = 1;
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("isFirstTime", JSON.stringify(false));
         console.log("Updated state:", localStorage);
 
-        alert("Welcome for the first time!");
+        // alert("Welcome for the first time!");
     } else {
         popUpSection.style.opacity = 0;
         popUpSection.style.pointerEvents = "none";
