@@ -26,7 +26,7 @@ localStorage.setItem("isFirstTime", JSON.stringify(true))
 // })
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Select your element explicitly
-    const popUpSection = document.querySelector("#popUpSection"); // Update selector if needed
+    // Update selector if needed
 
     // 2. Fetch the value inside the event listener
     const storedValue = localStorage.getItem("isFirstTime");
