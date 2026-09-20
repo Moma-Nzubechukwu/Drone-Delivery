@@ -7,7 +7,7 @@ const aboutUsNavigator = document.getElementById("about-usnavigator");
 const MoreAboutUsBtn = document.getElementById("more-abt-us-btn");
 const closePupupBtn = document.getElementById("close-pup-up-btn");
 const popUpSection = document.getElementById("popup-section");
-localStorage.setItem("isFirstTime", JSON.stringify(true))
+
 const orderBtn = document.getElementById("order-btn");
 
 

@@ -6,7 +6,7 @@
     --BTN-PRIMARY-BG: #42445A;
     --BTN-SECONDARY-BG: PINK;
     --BTN-BORDER: WHITE;
-    --BACK-GROUND-BLUR: #00000087;
+    --BACK-GROUND-BLUR: #0000009e;
     --BORDER-LIGHT: rgba(128, 128, 128, 0.346);
     --BTN-COLOR-TEXT: YELLOW;
     --BG-3: #161937;
@@ -17,6 +17,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.css-food-card-section {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 .css-cart-container {
@@ -68,20 +75,19 @@
 .css-header-search-section {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .css-page-search-input {
     height: 30px;
-    width: 250px;
+    width: 200px;
     border-radius: 20px;
     border: none;
-    background-color: rgba(128, 128, 128, 0.304);
+    background-color: var(--BG-PRIMARY);
     padding: 10px;
 }
 
 .css-page-search-input:focus {
-    background-color: rgba(128, 128, 128, 0.304);
     outline: none;
 }
 
@@ -149,11 +155,8 @@
     height: 18px;
 }
 
-.css-food-card-section {
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+.css-food-card {
+    width: 350px;
 }
 
 .css-food-card-img {
@@ -225,8 +228,175 @@
     height: 18px;
 }
 
+.css-more-btn {
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.css-search-btn {
+    border: none;
+    border-radius: 50%;
+}
+
+.css-search-button {
+    fill: black;
+}
+
+.css-search-buton-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-search-section {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--BACK-GROUND-BLUR);
+    transition: opacity .3s;
+}
+
+.css-search-section-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.css-search-result-display {
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    flex-grow: 1;
+    /* background-color: red; */
+}
+
+.css-display-card:first-child {
+    border-top: 1px solid var(--BORDER-LIGHT);
+}
+
+.css-display-card {
+    border-bottom: 1px solid var(--BORDER-LIGHT);
+    padding: 10px;
+    height: 40px;
+}
+
+.css-search-inner-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.css-close-search-btn {
+    position: absolute;
+    color: white;
+    background-color: var(--BG-SECONDARY);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    top: -50px;
+    right: 0;
+}
+
+.css-search-inner-section {
+    height: 80vh;
+    width: 90vw;
+    background-color: var(--BG-SECONDARY);
+    border-radius: 20px;
+}
+
+.css-search-input-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* .css-search-input-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+} */
+
+.css-more-svg {
+    fill: var(--BG-SECONDARY);
+    height: 24px;
+}
+
+@media (max-width:1034px) and (min-width:640px) {
+    .css-food-card-section {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width:640px) {
+    .css-three-dots-more-section {
+        display: none;
+    }
+    .header-more-imer-section {
+        display: flex;
+        gap: 30px;
+    }
+}
+
 @media (max-width:640px) {
     .css-header-more-action-section {
         position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 200;
+    }
+    .css-header-more-action-section-active {
+        background-color: var(--BACK-GROUND-BLUR);
+        pointer-events: all;
+    }
+    .css-food-card-section {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .header-more-imer-section {
+        width: 80vw;
+        height: 100%;
+        background-color: white;
+        transform: translateX(-100%);
+        transition: transform .3s;
+    }
+    .header-more-imer-section-active {
+        transform: translateX(0%);
+    }
+    .cs-cancel-nav-container {
+        height: 70px;
+        text-align: right;
+        padding: 10px;
+    }
+    .css-header-more-option {
+        height: 40px;
+        padding: 10px;
+    }
+    .css-cancel-namv-svg {
+        fill: var(--BG-SECONDARY);
+        height: 50px;
+    }
+    .css-close-nav-btn {
+        background-color: transparent;
+        border: none;
     }
 }
