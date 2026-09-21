@@ -20,7 +20,7 @@
         <section class="css-header-more-action-section" id="nav-outter-section">
             <section class="header-more-imer-section" id="nav-imner-section">
                 <div class="cs-cancel-nav-container">
-                    <button class="css-close-nav-btn" id="close-nav">
+                    <button class="css-close-nav-btn" id="close-nav" title="close nav">
 
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="css-cancel-namv-svg "><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                     </button>
@@ -52,7 +52,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" class="css-search-button"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
                 </button>
             </div>
-            <div class="css-profile-icon-container">
+            <div class="css-profile-icon-container" id="profile-icon-container">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="css-profile-svg"><path d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q560-607 560-640t-23.5-56.5Q513-720 480-720t-56.5 23.5Q400-673 400-640t23.5 56.5Q447-560 480-560t56.5-23.5ZM480-640Zm0 400Z"/></svg>
             </div>
             <div class="css-cart-container">
@@ -64,7 +64,7 @@
                 </button>
             </div>
             <div class="css-three-dots-more-section">
-                <button class="css-more-btn" id="open-nav-btn">
+                <button class="css-more-btn" id="open-nav-btn" title="open nav">
                     <svg xmlns="http://www.w3.org/2000/svg" class="css-more-svg" viewBox="0 -960 960 960" ><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg>
                 </button>
             </div>
@@ -286,6 +286,52 @@
 
     </main>
     <footer></footer>
+    <section class="css-popup-section" id="popup-section">
+        <section class="css-pop-inner-section" id="popup-inner-section">
+            <section class="css-popupu-mesage-section " id="popup-mesage-section">
+                please this side is still under construction
+            </section>
+            <section class="css-popup-icon-section"></section>
+            <section class="css-popup-action-section">
+                <button class="css-close-popup-btn" id="close-popup-btn">Close</button>
+            </section>
+
+        </section>
+
+    </section>
+    <section class="css-loginorsignup-section" id="loginorsignup-section">
+        <section class="css-loginorsignup-inner-section" id="log-in-popup">
+
+            <button class="css-loginorsignup-btn" title="close" type="button" id="close-log-in-pop-up-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+            <section class="css-log-in-form-section">
+                <h3>LOGIN</h3>
+                <p>Don't have an account create one here</p>
+                <form action="">
+                    <section class="css-log-in-input-section">
+
+                        <div class="css-input-container">
+                            <label for="name-input" class="css-login-name-input-label">
+                                Username or email
+                            </label>
+                            <input type="text" id="name-input" title="name" class="css-log-in-name-input">
+                        </div>
+                        <div class="css-input-container">
+                            <label for="password-input" class="css-login-password-input-label">
+                                Password
+                            </label>
+                            <input type="password" id="password-input" title="password" class="css-log-in-password-input">
+                        </div>
+                    </section>
+                    <section class="css-log-in-button-section">
+                        <button class="css-log-in-button" title="login" type="submit">Login</button>
+                    </section>
+                </form>
+            </section>
+        </section>
+
+    </section>
 </body>
 <script src="../assets/js/order.js"></script>
 
